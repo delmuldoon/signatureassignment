@@ -1,0 +1,86 @@
+body {
+    background-color: #83d083;
+    color: #10113e;
+}
+.bordered-div-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    text-align: center;
+}
+
+.bordered-div-home div {
+    border: 2px solid #142355;
+    background-color: #70c8ba;
+    margin: 0 auto;
+    padding: 3%;
+    font-size: 86%;
+    max-width: 25%;
+    border-radius: 8px;
+    margin-top: 50px
+}
+.bordered-div-banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 30%;
+    text-align: center;
+    margin-top: 20px;
+}
+.bordered-div-banner div {
+    border: 2px solid #142355;
+    background-color: #70c8ba;
+    margin: 0 auto;
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0, 1);
+    border-radius: 8px;
+}
+.bordered-div-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    text-align: center;
+    margin-top: 30px
+}
+
+.bordered-div-table div {
+    border: 2px solid #001661;
+    background-color: #70c8ba;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 3%;
+    font-size: 86%;
+    width: 31%;
+    min-width: 300px;
+    border-radius: 8px;
+}
+.subheader {
+    color: darkgoldenrod;
+}
+header nav {
+    text-align: center;
+    color: cornflowerblue;
+    border: 2px solid;
+    background-color: #142355;
+    
+}
+header a:visited {
+    color: cadetblue;
+    text-decoration: none;
+}
+header a:link {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+header a:hover {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
