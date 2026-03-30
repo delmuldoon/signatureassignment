@@ -56,6 +56,55 @@ body {
     min-width: 300px;
     border-radius: 8px;
 }
+.forme {
+   background-color: #70c8ba;
+    width: 625px;
+    padding: 10px;
+    margin: auto;
+    border: solid;
+    border-radius: 15px;
+    border-color: #001661;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    display:inline-flex;
+    margin-top: 5px;
+    color: darkgoldenrod;
+    border-radius: 8px;
+    border-color: #142355;
+    background-color:cornsilk;
+}
+textarea {
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid thin;
+    border-color: #142355;
+    background-color: cornsilk;
+    color: darkgoldenrod;
+}
+input[type="checkbox"], input[type="radio"] {
+    accent-color: #e6aa16;
+    
+}
+select {
+    color: darkgoldenrod;
+    background-color: cornsilk;
+    border-color: #142355;
+    border-radius: 5px;
+    border: solid inset;
+    color: #10113e;
+}
+.contactinfo {
+    display: flex;
+    margin-right: 10px
+}
+.contactinfo ul {
+    list-style-type: none;
+    text-align: center;
+}
+.contactinfo h2, h3, p {
+    text-align: center;
+}
 .subheader {
     color: darkgoldenrod;
 }
@@ -78,6 +127,18 @@ header a:hover {
     color: darkgoldenrod;
     text-decoration: none;
 }
+header {
+                background-image: url(images/ontherun.webp);
+                background-image: no-repeat;
+                background-size: cover;
+                background-position: 50% 71%;
+            }
+.bannersubhead h2 {
+                text-align: center;
+                color: #2424a9;
+                text-shadow: 0 0 6px #ffffff;
+                font-style:italic;
+            }
 footer {
     text-align: center;
 }

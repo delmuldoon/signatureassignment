@@ -3,40 +3,109 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles.css" />
-        <title>Contacts</title>
+        <title>Contact Us!</title>
         <style>
-            ul {
-                list-style-type: none;
-                text-align: center;
+        ul {
+        list-style-type: none;
             }
-            h1 {text-align: center;}
-            h2 {text-align: center;}
-            h3 {text-align: center;}
-            p {text-align: center;}
         </style>
     </head>
     <body>
         <main>
-            <h1><b>This site is under construction: Thanks for your patience!</b></h1>
-            <h3><i>Boston Calls In...</i></h3>
-            <h2>How to Reach Us:</h2>
-            <ul>
-                <li>Phone: 617-999-9999</li>
-                <li>Email (Appointments): consultations@bostoncallin.com</li>
-                <li>Email (General): inquiries@bostoncallin.com</li>
+            <header>
+                <nav>
+                    <b>
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="faq.html">FAQs</a>
+                        <a href="reviews.html">Reviews</a>
+                        <a href="troubleshooting">Common Solutions</a>
+                    </b>
+                </nav>
+                <div class="bordered-div-banner">
+                    <div>
+                        <h1><b>Contact Us!</b></h1>
+                    </div>
+                </div>
+                <div class="bannersubhead">
+                    <div>
+                        <h2>Boston Calls In...</h2>
+                    </div>
+                </div>
+            </header>
+            <div class="contactinfo">
+                <div>
+             <h2>Reach Us Directly:</h2>
+            <ul list-type="none">
+                <li>Phone: (617) 999-9999</li>
+                <li>Email (Appointments): <a href="mailto:consultations@bostoncallin.com">consultations@bostoncallin.com</a></li>
+                <li>Email (General): <a href="mailto:inquiries@bostoncallin.com">inquiries@bostoncallin.com</a></li>
             </ul>
-            <h1><b>By Phone:</b></h1>
+            <h3><b>By Phone:</b></h3>
             <p>
                 If you'd like to make an appointment, please leave a voicemail with your name, callback phone number,
                 and email. Please also include a brief description of your issue. We'll get back to you shortly.
             </p>
-            <h1><b>By Email:</b></h1>
+            <h3><b>By Email:</b></h3>
             <p>
                 In your email, please leave your name and callback number, as well as a brief description of your issue.
                 Please also include times you are available. If you have general questions, like you're unsure if we'll
                 service your issue, please contact the Inquiries address. If you'd like to schedule an appointment,
                 please contact the Consulations address.
             </p>
+                </div>
+                <div>
+            <form class="forme" action="https://webdevbasics.net/scripts/demo.php" method="post"> <!-- change this to tickets.php once i've figured that out -->
+                <h2>Submit a Ticket</h2>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName" required /><br />
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName" required /><br />
+                    <label for="uEmail">Email:</label>
+                    <input type="email" name="uEmail" id="uEmail" /><br />
+                    <label for="uPhone">Phone:</label>
+                    <input type="tel" name="uPhone" id="uPhone" /><br />
+                    <small><i>If you do not enter a contact method, we cannot get back to you!</i></small>
+                </fieldset>
+                <fieldset>
+                    <legend>How can I help?</legend>
+                    Why are you reaching out today?<br />
+                    <select size="3" name="issuetype" id="type" required>
+                    <option>Hardware issue</option>
+                    <option>Software issue</option>
+                    <option>I'm not sure</option>
+                    <option>Tech training session</option>
+                    <option>Just window shopping</option>
+                    </select><br>
+                    Describe the specific issue you're having. More details are always better.<br />
+                    <textarea name="writein" id="writein" cols="60" rows="3" required></textarea><br />
+                    Please include any screenshots/photos/logs/etc that are relevant to the issue:<br>
+                    <input type=file>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Logistics</legend>
+                    When are you usually available?<br>
+                    <input type="checkbox" name="monday" id="monday" value="yes" />Mondays<br />
+                    <input type="checkbox" name="tuesday" id="tuesday" value="yes" />Tuesdays<br />
+                    <input type="checkbox" name="wednesday" id="wednesday" value="yes" />Wednesdays<br />
+                    <input type="checkbox" name="thursday" id="thursday" value="yes" />Thursdays<br />
+                    <input type="checkbox" name="friday" id="friday" value="yes" />Fridays<br />
+                    <input type="checkbox" name="saturday" id="saturday" value="yes" />Saturdays<br />
+                    <input type="checkbox" name="sunday" id="Sunday" value="yes" />Sundays<br />
+                    How would you prefer we contact you?<br>
+                    <input type="radio" name="contacttype" id="phone" value="phone" required />Phone<br />
+                    <input type="radio" name="contacttype" id="email" value="phone" />Email<br />
+                    Anything you want us to know before we reach out? (Only call at this time, text only, etc)<br>
+                    <textarea name="contactnotes" id="contactnotes" cols="60" rows="3" required></textarea><br />
+                </fieldset>
+                <div class="buttons"><input type="submit" value="Submit" /> <input type="reset" /></div>
+            </form>
+                </div>
+            </div>
         </main>
         <footer>
             <small>Boston Call-In LLC copyright 2026. Boston, MA, USA.</small>
