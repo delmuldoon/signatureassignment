@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
         <title>Contact Us!</title>
         <style>
@@ -9,6 +10,7 @@
         list-style-type: none;
             }
         </style>
+        <script src="script1.js"></script>
     </head>
     <body>
         <main>
@@ -20,7 +22,7 @@
                         <a href="contact.html">Contact Us</a>
                         <a href="faq.html">FAQs</a>
                         <a href="reviews.html">Reviews</a>
-                        <a href="troubleshooting">Common Solutions</a>
+                        <a href="troubleshooting.html">Common Solutions</a>
                     </b>
                 </nav>
                 <div class="bordered-div-banner">
@@ -56,7 +58,7 @@
             </p>
                 </div>
                 <div>
-            <form class="forme" action="https://webdevbasics.net/scripts/demo.php" method="post"> <!-- change this to tickets.php once i've figured that out -->
+            <form class="forme" action="https://webdevbasics.net/scripts/demo.php" method="post" novalidate> <!-- change this to tickets.php once i've figured that out -->
                 <h2>Submit a Ticket</h2>
                 <fieldset>
                     <legend>Personal Information</legend>
@@ -95,11 +97,11 @@
                     <input type="checkbox" name="thursday" id="thursday" value="yes" />Thursdays<br />
                     <input type="checkbox" name="friday" id="friday" value="yes" />Fridays<br />
                     <input type="checkbox" name="saturday" id="saturday" value="yes" />Saturdays<br />
-                    <input type="checkbox" name="sunday" id="Sunday" value="yes" />Sundays<br />
+                    <input type="checkbox" name="sunday" id="sunday" value="yes" />Sundays<br />
                     How would you prefer we contact you?<br>
                     <input type="radio" name="contacttype" id="phone" value="phone" required />Phone<br />
-                    <input type="radio" name="contacttype" id="email" value="phone" />Email<br />
-                    Anything you want us to know before we reach out? (Only call at this time, text only, etc)<br>
+                    <input type="radio" name="contacttype" id="email" value="email" />Email<br />
+                    Anything you want us to know before we reach out? ("Only call at this time", "text only", etc.)<br>
                     <textarea name="contactnotes" id="contactnotes" cols="60" rows="3" required></textarea><br />
                 </fieldset>
                 <div class="buttons"><input type="submit" value="Submit" /> <input type="reset" /></div>
@@ -108,7 +110,7 @@
             </div>
         </main>
         <footer>
-            <small>Boston Call-In LLC copyright 2026. Boston, MA, USA.</small>
+            <small>Boston Call-In LLC&copy; 2026. Boston, MA, USA.</small>
         </footer>
     </body>
 </html>

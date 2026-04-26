@@ -18,7 +18,7 @@ body {
     font-size: 86%;
     max-width: 25%;
     border-radius: 8px;
-    margin-top: 50px
+    margin-top: 50px;
 }
 .bordered-div-banner {
     display: flex;
@@ -42,7 +42,10 @@ body {
     flex-wrap: wrap;
     gap: 5%;
     text-align: center;
-    margin-top: 30px
+    margin-top: 30px;
+}
+.bordered-div-table table {
+    margin: 0 auto;
 }
 
 .bordered-div-table div {
@@ -57,7 +60,7 @@ body {
     border-radius: 8px;
 }
 .forme {
-   background-color: #70c8ba;
+    background-color: #70c8ba;
     width: 625px;
     padding: 10px;
     margin: auto;
@@ -65,13 +68,15 @@ body {
     border-radius: 15px;
     border-color: #001661;
 }
-input[type="text"], input[type="email"], input[type="tel"] {
-    display:inline-flex;
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: inline-flex;
     margin-top: 5px;
     color: darkgoldenrod;
     border-radius: 8px;
     border-color: #142355;
-    background-color:cornsilk;
+    background-color: cornsilk;
 }
 textarea {
     display: block;
@@ -82,9 +87,9 @@ textarea {
     background-color: cornsilk;
     color: darkgoldenrod;
 }
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
     accent-color: #e6aa16;
-    
 }
 select {
     color: darkgoldenrod;
@@ -96,13 +101,15 @@ select {
 }
 .contactinfo {
     display: flex;
-    margin-right: 10px
+    margin-right: 10px;
 }
 .contactinfo ul {
     list-style-type: none;
     text-align: center;
 }
-.contactinfo h2, h3, p {
+.contactinfo h2,
+h3,
+p {
     text-align: center;
 }
 .subheader {
@@ -113,7 +120,6 @@ header nav {
     color: cornflowerblue;
     border: 2px solid;
     background-color: #142355;
-    
 }
 header a:visited {
     color: cadetblue;
@@ -128,20 +134,71 @@ header a:hover {
     text-decoration: none;
 }
 header {
-                background-image: url(images/ontherun.webp);
-                background-image: no-repeat;
-                background-size: cover;
-                background-position: 50% 71%;
-            }
+    background-image: url(images/ontherun.webp);
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: 50% 71%;
+}
 .bannersubhead h2 {
-                text-align: center;
-                color: #2424a9;
-                text-shadow: 0 0 6px #ffffff;
-                font-style:italic;
-            }
+    text-align: center;
+    color: #2424a9;
+    text-shadow: 0 0 6px #ffffff;
+    font-style: italic;
+}
 footer {
     text-align: center;
 }
 p {
     text-align: center;
+}
+.tstype {
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #142355;
+    background-color: #70c8ba;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 8px;
+}
+.ts-steps {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ts-steps ol {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+.tstopic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.tstopic div {
+    border: 2px solid #142355;
+    background-color: #70c8ba;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.tstopic ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.tstopic a:visited {
+    color: darkslategray;
+}
+.tstopic a:hover {
+    color: darkgoldenrod;
+}
+.tstopic a:link {
+    color: #2424a9;
 }
